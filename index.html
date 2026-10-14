@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturna — Support</title>
+<style>
+  :root {
+    --night: #23222e;
+    --dusk-mid: #4a3540;
+    --dusk: #8a6a4a;
+    --gold: #d9b876;
+    --cream: #f7f2e9;
+    --ink: #2e241d;
+    --ink-soft: #6b5d4f;
+    --accent: #d95b2b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", system-ui, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--night) 0%, var(--dusk-mid) 42%, var(--dusk) 72%, var(--gold) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 64px;
+  }
+  .panda-watermark {
+    position: fixed;
+    right: -120px;
+    bottom: -120px;
+    width: 480px;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero { text-align: center; z-index: 1; }
+  .hero img.icon {
+    width: 132px;
+    height: 132px;
+    border-radius: 30px;
+    box-shadow: 0 18px 42px rgba(0,0,0,0.38);
+  }
+  h1 {
+    margin-top: 22px;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--cream);
+  }
+  .tagline {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--cream);
+    opacity: 0.85;
+    max-width: 420px;
+  }
+  .cards {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+  }
+  .card {
+    background: var(--cream);
+    border-radius: 24px;
+    padding: 26px 28px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+  }
+  .card h2 {
+    font-size: 19px;
+    font-weight: 650;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .card a:hover { text-decoration: underline; }
+  .privacy-note {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--cream);
+    opacity: 0.75;
+    max-width: 420px;
+    line-height: 1.5;
+    z-index: 1;
+  }
+  footer {
+    margin-top: 44px;
+    font-size: 13px;
+    color: var(--cream);
+    opacity: 0.55;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+  <img class="panda-watermark" src="assets/red-panda.png" alt="">
+
+  <div class="hero">
+    <img class="icon" src="assets/app-icon.png" alt="Nocturna app icon — a red panda">
+    <h1>Nocturna</h1>
+    <p class="tagline">A private journal for people who think best by writing.
+       Everything you write stays on your iPhone.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Support</h2>
+      <p>Questions, feedback, or something not working?
+         Write to <a href="mailto:gjmabo@gmail.com">gjmabo@gmail.com</a> —
+         every message is read and answered.</p>
+    </div>
+
+    <div class="card">
+      <h2>Privacy</h2>
+      <p>Nocturna has no servers, no accounts, no analytics, and no ads.
+         Read the full <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>The App</h2>
+      <p>A journal with a living emotional map, a quiet on-device companion
+         that helps you think, and calm weekly reflections on your sleep,
+         steps, and mood. Free to write in, forever.</p>
+    </div>
+  </div>
+
+  <p class="privacy-note">Nocturna is built by Gabriel Madrigal in Costa Rica,
+     with the conviction that your inner life belongs to you.</p>
+
+  <footer>© 2026 Gabriel Madrigal Boza</footer>
+</body>
+</html>

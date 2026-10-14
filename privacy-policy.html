@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturna — Privacy Policy</title>
+<style>
+  :root {
+    --night: #23222e;
+    --dusk-mid: #4a3540;
+    --dusk: #8a6a4a;
+    --gold: #d9b876;
+    --cream: #f7f2e9;
+    --ink: #2e241d;
+    --ink-soft: #5d4f43;
+    --accent: #d95b2b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", system-ui, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--night) 0%, var(--dusk-mid) 42%, var(--dusk) 72%, var(--gold) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 64px;
+  }
+  .panda-watermark {
+    position: fixed;
+    right: -120px;
+    bottom: -120px;
+    width: 480px;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+  main {
+    width: 100%;
+    max-width: 680px;
+    z-index: 1;
+  }
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .masthead img {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  .masthead .app {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cream);
+  }
+  .masthead .doc {
+    font-size: 14px;
+    color: var(--cream);
+    opacity: 0.7;
+  }
+  article {
+    background: var(--cream);
+    border-radius: 24px;
+    padding: 40px 36px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .effective {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: 650;
+    margin: 30px 0 10px;
+    color: var(--ink);
+  }
+  h2:first-of-type { margin-top: 0; }
+  p {
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+  ul {
+    margin: 0 0 12px 22px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.62;
+  }
+  li { margin-bottom: 5px; }
+  strong { color: var(--ink); font-weight: 650; }
+  a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .back {
+    display: inline-block;
+    margin-top: 26px;
+    font-size: 15px;
+    color: var(--cream);
+    opacity: 0.85;
+  }
+  .back:hover { opacity: 1; }
+</style>
+</head>
+<body>
+  <img class="panda-watermark" src="assets/red-panda.png" alt="">
+
+  <main>
+    <div class="masthead">
+      <img src="assets/app-icon.png" alt="Nocturna app icon — a red panda">
+      <div>
+        <div class="app">Nocturna</div>
+        <div class="doc">Privacy Policy</div>
+      </div>
+    </div>
+
+    <article>
+      <h1>Privacy Policy</h1>
+      <p class="effective">Draft v1 — October 7, 2026. Effective upon publication.
+         Contact: <a href="mailto:gjmabo@gmail.com">gjmabo@gmail.com</a></p>
+
+      <h2>The short version</h2>
+      <p>Nocturna is a private journaling and wellness app. <strong>Everything you write,
+      log, or say to the app stays on your iPhone.</strong> Nocturna has no servers, no
+      accounts, no analytics, no advertising, and no tracking of any kind. Your data never
+      leaves your device except in two narrow cases, both under your control: downloading
+      the AI model (a one-time download, nothing is sent), and anything you explicitly
+      export or share yourself.</p>
+
+      <h2>What the app handles (all on-device)</h2>
+      <ul>
+        <li><strong>Diary entries</strong> — text and photos you attach.</li>
+        <li><strong>Mood logs</strong> — scores, notes, and activity tags you record.</li>
+        <li><strong>Conversations with Nocturna</strong> — the Reflect chat transcripts and
+          rolling summaries, stored locally so you can browse past conversations and so the
+          app can draft journal entries from them.</li>
+        <li><strong>Core memory profile</strong> — the optional "what Nocturna knows" fields
+          you fill in yourself.</li>
+        <li><strong>Health data</strong> — sleep analysis, step counts, and workouts read from
+          Apple HealthKit <strong>with read-only permission</strong>, used to show your
+          dashboards and to compute weekly reflections on-device.</li>
+        <li><strong>AI-generated content</strong> — entry analyses (emotions, themes), weekly
+          reflections, and journal-entry drafts, all produced on-device.</li>
+      </ul>
+      <p>All of this is stored only in the app's local database on your iPhone. If you enable
+      the app lock, it is additionally protected by your device's biometric authentication
+      (Face ID or passcode) via Apple's LocalAuthentication framework — your biometric data
+      never touches the app.</p>
+
+      <h2>What leaves the device</h2>
+      <ul>
+        <li><strong>AI model download (one time).</strong> The on-device language model (~2 GB)
+          is downloaded once from Hugging Face's content-delivery servers over the internet.
+          This request contains no personal data — it is a file download. After it completes,
+          the model runs entirely offline.</li>
+        <li><strong>Purchases.</strong> Subscriptions (Nocturna Pro) are processed by Apple via
+          StoreKit. Apple handles your payment information; the developer never sees it. The
+          app receives only your subscription status.</li>
+        <li><strong>Anything you export or share.</strong> If you use the export feature
+          (Settings → Export My Data) or the iOS share sheet anywhere in the app, you choose
+          what leaves and where it goes. Exported files may contain sensitive personal
+          information — share them carefully.</li>
+      </ul>
+      <p>That is the complete list. There is no account system, no cloud sync, no
+      crash-reporting service, no analytics SDK, and no advertising framework in the app.</p>
+
+      <h2>On-device AI</h2>
+      <p>All language-model inference — chat replies, entry analysis, weekly reflections,
+      journal drafts — runs locally on your iPhone using Apple's MLX framework. Your writing
+      is never sent to any server for processing.</p>
+
+      <h2>Location</h2>
+      <p>With your permission ("While Using the App"), Nocturna reads your approximate
+      location <strong>only</strong> to calculate local sunrise and sunset times for the
+      living-sky background. Coordinates are used in a pure on-device computation and are
+      never stored, logged, or transmitted. If you decline, the app estimates sunrise/sunset
+      from your time zone instead.</p>
+
+      <h2>Health data (HealthKit)</h2>
+      <p>Nocturna requests read-only access to sleep analysis, step counts, and workouts.
+      This data is used solely to display your Sleep and Wellness dashboards and to
+      pre-aggregate daily summaries on-device for weekly reflections. It is never written
+      back to HealthKit, never transmitted, and never shared with third parties. You can
+      revoke access at any time in iOS Settings → Health → Data Access &amp; Devices.</p>
+
+      <h2>Microphone and speech recognition</h2>
+      <p>If you use voice capture for diary entries, audio is transcribed on-device using
+      Apple's Speech framework. Recordings are processed locally and are not stored or
+      transmitted.</p>
+
+      <h2>Photos</h2>
+      <p>Photos you attach to diary entries are stored in the app's local storage and
+      displayed only inside the app. They are never uploaded.</p>
+
+      <h2>Data retention and deletion</h2>
+      <p>Your data lives on your device for as long as you keep the app. You can delete
+      individual diary entries and mood logs inside the app at any time. Deleting the app
+      deletes all of its local data. There is no remote copy to delete because no remote
+      copy exists.</p>
+
+      <h2>Children</h2>
+      <p>Nocturna is not directed at children under 13 and does not knowingly collect any
+      information from children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be published at the same URL and
+      noted in the app. Material changes will be called out explicitly.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy: <a href="mailto:gjmabo@gmail.com">gjmabo@gmail.com</a></p>
+    </article>
+
+    <a class="back" href="index.html">← Back to Nocturna</a>
+  </main>
+</body>
+</html>
